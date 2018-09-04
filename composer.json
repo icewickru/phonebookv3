@@ -1,0 +1,18 @@
+{
+    "name": "dnetrebko/phonebook",
+    "description": "Phonebook test app v3",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniil Netrebko",
+            "email": "dnetrebko@yandex.ru"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Phonebook\\": "vendor/Phonebook/"
+        }
+    }
+}

@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Verdana, Courier;
+}
+
+.container {
+	width: 640px;
+	margin: 0 auto;
+	background: #f8f8f8;
+	padding: 10px 10px 30px 10px;
+}
+
+h1 {
+	color: b0b0b0;
+	text-align: center;
+}
+
+#contacts_table {
+	border-collapse: collapse;
+	background: #fff;
+	margin: 0 auto;
+}
+
+#contacts_table th {
+	padding: 5px;
+	border: 1px solid #808080;
+}
+
+#contacts_table td {
+	padding: 5px;
+	border: 1px solid #808080;
+}
+
+.contact_phone_container {
+	display: block;
+	border-radius: 5px;
+	margin: 3px 0;
+	padding: 2px;
+	background: #e0e0e0;
+}
+
+.contact_phone {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.contact_phone_delete {
+	display: inline-block;
+	font-weight: bold;
+	color: #bb0000;
+	float: right;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+div.action_container {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+div.action_container a {
+	cursor: pointer;
+	color: #0000bb;
+}
+
+div.action_container a:hover {
+	color: #0000ff;
+}
+
+.hidden_by_search {
+	display: none;
+}
+
+p.hint {
+	margin: 2px 0 12px 0;
+	font-size: 10px;
+	color: b0b0b0;
+}
+
+
+.update_contact_name {
+	display: block;
+	margin: 0 0 4px 0;
+}
+
+.update_contact_phone {
+	display: block;
+	margin: 0 0 4px 0;
+}
+
+input[type="text"] {
+  color: #000;
+  text-decoration: none;
+  user-select: none;
+  background: #ffffff;
+  padding: .3em .7em;
+}
+
+input[type="button"] {
+	color: #444;
+	text-shadow: #fff 1px 1px;
+	text-decoration: none;
+	
+	padding: .3em .7em;
+	border-radius: 5px;
+	
+	background: rgb(242,246,248);
+	background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%);
+	background: linear-gradient(to bottom, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 );	
+}
+
+.contact_phone_container {
+	display: block;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 1em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);	
+	margin: 0 0 5px 0;
+}
+
+.contact_phone_delete {
+	font-size: 20px;
+}
+
+#tools_container {
+	width: 520px;
+	margin: 0 auto;
+}
