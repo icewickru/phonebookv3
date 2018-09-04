@@ -1,13 +1,13 @@
-1. Создание БД и таблиц:
+1. РЎРѕР·РґР°РЅРёРµ Р‘Р” Рё С‚Р°Р±Р»РёС†:
 
--- База данных: `test`
->Структура таблицы `contact`
+-- Р‘Р°Р·Р° РґР°РЅРЅС‹С…: `test`
+>РЎС‚СЂСѓРєС‚СѓСЂР° С‚Р°Р±Р»РёС†С‹ `contact`
 >>CREATE TABLE `contact` (
   `id` int(11) NOT NULL,
   `name` varchar(1024) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-> Структура таблицы `phone`
+> РЎС‚СЂСѓРєС‚СѓСЂР° С‚Р°Р±Р»РёС†С‹ `phone`
 >>CREATE TABLE `phone` (
   `id` int(11) NOT NULL,
   `contact_id` int(11) NOT NULL,
@@ -20,10 +20,10 @@
 >ALTER TABLE `phone`
   ADD PRIMARY KEY (`id`);
 
->Внешний ключ таблицы `phone`
+>Р’РЅРµС€РЅРёР№ РєР»СЋС‡ С‚Р°Р±Р»РёС†С‹ `phone`
 >>ALTER TABLE `phone` ADD CONSTRAINT `phone_ibfk_1` FOREIGN KEY (`contact_id`) REFERENCES `contact` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
   
-2. Склонировать репозиторий в корень веб-сервера
+2. РЎРєР»РѕРЅРёСЂРѕРІР°С‚СЊ СЂРµРїРѕР·РёС‚РѕСЂРёР№ РІ РєРѕСЂРµРЅСЊ РІРµР±-СЃРµСЂРІРµСЂР°
 >git clone https://github.com/icewickru/phonebookv3.git
 
-3. Задать в vendor\Phonebook\DBHelper.php логин и пароль от БД
+3. Р—Р°РґР°С‚СЊ РІ vendor\Phonebook\DBHelper.php Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РѕС‚ Р‘Р”
